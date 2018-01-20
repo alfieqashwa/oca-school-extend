@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<odoo>
+	<!-- replace placeholder "Gender" into None -->
+	<record id="oca_sekolah.view_student_student_form_1" model="ir.ui.view">
+		<field name="model">student.student</field>
+		<field name="inherit_id" ref="school.view_student_student_form_1"/>
+		<field name="arch" type="xml">
+			<xpath expr='//page[@name="general"]/group/group/field[@name="gender"]' position="attributes" >
+				<attribute name="placeholder"></attribute>
+			</xpath>
+			<!-- replace placeholder "Cast" into None -->
+			<xpath expr='//page[@name="general"]/group/group/field[@name="cast_id"]' position="attributes">
+				<attribute name="placeholder"></attribute>
+			</xpath>
+		</field>
+	</record>
+
+	<!-- replace placeholder "Gender" into None -->
+	<record id="oca_sekolah.view_student_student_form_2" model="ir.ui.view">
+		<field name="model">student.student</field>
+		<field name="inherit_id" ref="school.view_student_student_form_2"/>
+		<field name="arch" type="xml">
+			<xpath expr='//page[1]/form/sheet/group/group/field[@name="gender"]' position="attributes">
+				<attribute name="placeholder"></attribute>
+			</xpath>
+			<xpath expr='//page[3]/field[@name="reference_ids"]/tree/field[@name="gender"]' position="attributes">
+				<attribute name="placeholder"></attribute>
+			</xpath>
+			<xpath expr='//page[3]/field[@name="reference_ids"]/form/group/field[@name="gender"]' position="attributes">
+				<attribute name="placeholder"></attribute>
+			</xpath>
+		</field>
+	</record>
+</odoo>

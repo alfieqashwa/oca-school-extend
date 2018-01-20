@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="school.menu_ems" model="ir.ui.menu">
+      <field name="name">School</field>
+    </record>
+    <!-- replace Cast Sub-Menu Name into Religion -->
+    <record id="school.menu_cast" model="ir.ui.menu">
+      <field name="name">Religion</field>
+    </record>
+  </data>
+</odoo>
