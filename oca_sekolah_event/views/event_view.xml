@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+
+<odoo>
+  <record id="oca_sekolah_event.student_event_kanban_view" model="ir.ui.view">
+    <field name="model">school.event</field>
+    <field name="inherit_id" ref="school_event.student_event_kanban_view" />
+    <field name="arch" type="xml">
+      <xpath expr='//div/div[3]/table/tr/td/table/tr[3]/td[1]' position="replace">
+        <td>Contact Teacher : </td>
+      </xpath>
+    </field>
+  </record>
+</odoo>
